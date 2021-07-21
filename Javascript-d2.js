@@ -21,3 +21,21 @@ console.log('Index of m :'+s2.indexOf('m'));
 const number=2021
 console.log('welcome to '+number+' celebration');
 console.log(`I am ${20} years old`);
+// ARRAYS IN JAVASCRIPT - Collection of Items
+// 2 ways Array - 1. Using Array Contrsuctor
+const array1=new Array('java','c++','c')
+console.log(array1)
+//accessing array index using for loop
+for(i=0;i<array1.length;i++){
+    console.log(`Index ${i} : ${array1[i]}`)
+}
+//ARRAY WAY 2 :using [] (ES6)
+// const array_2=['vaishnavi','borkarvaishnavi85@gmail.com'];
+// console.log(array_2);
+// Contain multiple data types in a single Array
+const array_2=['vaishnavi',8999837751,"borkarvaishnavi85@gmail.com",21];
+console.log(array_2);
+console.log(`My NAME : ${array_2[0]}`)
+console.log(`My PHONE NUMBER : ${array_2[1]}`)
+console.log(`My EMAIL ID : ${array_2[2]}`)
+console.log(`My AGE : ${array_2[3]}`)
