@@ -48,3 +48,41 @@ const books = {
 console.log(books); //accessing books object
 console.log(books.author); //accessing author inside books object
 console.log(books.book_names[2]);  //accessing array inside books objet
+
+//ArrayOfObjects :[{},{},{}]
+const array_of_objects = [
+    {
+        student_name:'Nisha',
+        roll_no:1,
+        marks:70.89,
+        address:{             //object inside object (as a key:value)
+                   area:'katora',
+                   pin:444601
+           }
+    },
+    {
+        student_name:'Gulprit',
+        roll_no:2,
+        marks:60.0,
+        address:{
+                   area:'navhate',
+                   pin:444602
+           }
+    },
+      {
+        student_name:'Rashika',
+        roll_no:3,
+        marks:89.90,
+        address:{
+                   area:'Gopal Nagar',
+                   pin:444603
+           }
+    }
+]
+console.log(array_of_objects)  // log the array
+//access the objects which is inside the array.
+//access the student_name of 0th location array index 
+console.log(array_of_objects[0].student_name)
+console.log(array_of_objects[2].student_name)
+//access area from each object.
+console.log(`${array_of_objects[0].address.area},${array_of_objects[1].address.area}, ${array_of_objects[2].address.area}`);
