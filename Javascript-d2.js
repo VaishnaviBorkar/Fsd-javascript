@@ -39,3 +39,12 @@ console.log(`My NAME : ${array_2[0]}`)
 console.log(`My PHONE NUMBER : ${array_2[1]}`)
 console.log(`My EMAIL ID : ${array_2[2]}`)
 console.log(`My AGE : ${array_2[3]}`)
+
+//objects in javaScript : object_name:{key="value"}
+const books = {
+     author:'Dr.APJ Kalam',
+     book_names:['My journey','Wings of Fire','Turning Point']
+}
+console.log(books); //accessing books object
+console.log(books.author); //accessing author inside books object
+console.log(books.book_names[2]);  //accessing array inside books objet
