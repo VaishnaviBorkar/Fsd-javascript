@@ -115,3 +115,92 @@ else{
     console.log("unequal");
 } 
 //should use ===
+// json array with key in ""
+//covert arrayOfObjects to json using stringify()
+const json_array=JSON.stringify(array_of_objects)
+console.log(json_array);
+// json to arrayofobjects
+const arrayoobject=JSON.parse(json_array)
+console.log(arrayoobject);
+// 1. Basic Loops - for() & while()
+// 2. Higher Order Array Methods - for-of, for-in, map, filter, reduce
+
+// Print numbers from 1 to 15
+
+//for(initialization; condition; inc/dec)
+for(let i2=1; i2 <= 15; i2++) {
+    console.log(`Value is ${i}`);
+} 
+
+//Table of 5 
+for(let i3=5; i3 <= 50; i3=i3+5) {
+    console.log(`5 x ${i/5} = ${i3}`)
+}
+
+//initilaization
+//while(condition) {
+ //   inc/dec
+//}
+
+let i1 = 1
+while(i1 <= 10) {
+    console.log(`The value is ${i1}`)
+    i1+=1
+}
+
+// Priniting the Table of 2
+let j = 2
+while(j <= 20) {
+    console.log(`2 x ${j/2} = ${j}`);
+    j+=2
+}
+// Array of Object
+const todos = [
+    {
+        id: 1,
+        task: 'Meeting with the Team',
+        isCompleted: true
+    },
+    {
+        id: 2,
+        task: 'Take out the Trash',
+        isCompleted: false
+    },
+    {
+        id: 3,
+        task: 'Take my dog for a walk',
+        isCompleted: true
+    }
+]
+for(k=0;k<todos.length;k++)
+{
+    console.log(todos[k].task);
+}
+//in above example we are itterating from whole array.
+//If you don't wanna use array[index]
+// for-of - for(let local of array) { ... }
+for(let todo of todos){
+      // print only those tasks whose isCompleted is true
+    todo.isCompleted === true ? console.log(`completed tasks :${todo.task}`):''
+}
+//functions in java
+//two ways : 1)traditional way 2)ES6 WAY (most popular-arrow function)
+//1. function functionName(parameters list) { ...body Of Function }
+//2. (parameter) => {body of fuction } --
+function add(x,y)
+{
+    console.log("add function executing");
+    addition=x+y
+    console.log(`${x}+${y}= ${addition}`);
+}
+//calling function :
+add(10,30)
+// ES6 Arrow Function ---> accessModifier  
+const greet = (name) => {
+    console.log(`Good evening ${name}`);
+}
+greet('Vaishnavi')
+const arrowfun=()=> {
+    console.log('hellow arrow function running');
+}
+arrowfun()
