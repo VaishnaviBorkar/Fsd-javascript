@@ -86,3 +86,10 @@ console.log(array_of_objects[0].student_name)
 console.log(array_of_objects[2].student_name)
 //access area from each object.
 console.log(`${array_of_objects[0].address.area},${array_of_objects[1].address.area}, ${array_of_objects[2].address.area}`);
+//if else
+if(array_of_objects[0].marks>array_of_objects[1].marks){
+console.log(`${array_of_objects[0].student_name} has more marks than ${array_of_objects[1].student_name}`);
+}
+else{
+    console.log(`${array_of_objects[0].student_name} has less marks than ${array_of_objects[1].student_name}`);
+}
