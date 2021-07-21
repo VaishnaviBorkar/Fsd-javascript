@@ -93,3 +93,25 @@ console.log(`${array_of_objects[0].student_name} has more marks than ${array_of_
 else{
     console.log(`${array_of_objects[0].student_name} has less marks than ${array_of_objects[1].student_name}`);
 }
+//code practice 
+const result=10/0
+console.log(result); //indefiend
+const ans='vaishnavi'/90
+console.log(ans); //NaN Not a Number
+const ans_2='pink'/'gray'
+console.log(ans_2); //nan
+const values = ['🥚', '🐓'];
+//sort the values
+const output = values.sort();
+console.log(output);
+const numbers=[3,7,8,4,2,1]
+sorted=numbers.sort()
+console.log(sorted);
+if(11=='11')
+{
+    console.log("equal");
+}
+else{
+    console.log("unequal");
+} 
+//should use ===
