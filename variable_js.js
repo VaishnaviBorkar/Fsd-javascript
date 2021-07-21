@@ -9,20 +9,21 @@ console.warn("display warning text with warnning icon in yellow.")
 // Non Premetive Datatypes:Array,object arrayofobject json.
 p=10  //number
 q='string1' //String
-r=null
+r=null        //type object nt null
 s=10.50           //number
 t=5677.999999999999999999999999999999999999999   //number
 u=77777777777777777777777777777777777777777     //number
 v=true   //boolean
 w=undefined
-console.log(p)
-console.log(q)
-console.log(r)
-console.log(s)
-console.log(t)
-console.log(u)
-console.log(v)
-console.log(w)
+console.log(`${p} having type ${typeof p}`) //data types using typeof in js.
+console.log(`${q} having type ${typeof q}`)
+console.log(`${r} having type ${typeof r}`)
+console.log(`${s} having type ${typeof s}`)
+console.log(`${t} having type ${typeof t}`)
+console.log(`${u} having type ${typeof u}`)
+console.log(`${v} having type ${typeof v}`)
+console.log(`${w} having type ${typeof w}`)
+
 //Declaration of variables :var,let,const
 //1.var is global in nature 
 //2.let is local (Es6 keyword)
@@ -38,7 +39,5 @@ console.log(`${variable_2}changable`)
 const variable_3=67
 console.log(variable_3)
 // variable_3=56 cant change costant variable
-const str = 'This is a String'
-// Find the length of the String
- console.log(str.length);
+
 
