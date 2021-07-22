@@ -105,3 +105,29 @@ console.log(ul.previousSibling);   // text -> Indentation
 console.log(ul.previousElementSibling);  
 console.log(ul.nextSibling);
 console.log(ul.nextElementSibling);
+//DOM :Creating html elements
+const newli=document.createElement('li')
+console.log(newli);
+// Set the Attributes of the li HTML Element
+// newli.id='new-li'
+// newli.className='list-group-item'
+// newli.textContent='item-7'
+// //extract the ul and append newli as a child
+// const list_1=document.getElementById('items')
+// list_1.appendChild(newli)
+//adding item throwgh form
+const newitem=document.createElement('li')
+newitem.className='list-group-item'
+const text_form=document.getElementById('text-input')
+console.log(text_form);
+text_form.addEventListener('keyup',(e)=>{
+    const data=e.target.value
+    newitem.textContent=data
+    console.log(newitem);
+})
+const submit=document.addEventListener('click',(e)=>
+{
+    e.preventDefault()
+    const get_list=document.getElementById('items')
+    get_list.appendChild(newitem)
+})
