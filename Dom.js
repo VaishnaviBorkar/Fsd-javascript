@@ -45,3 +45,34 @@ const heading=document.querySelector('#header-title')
 console.log(heading)
 const array=document.querySelectorAll('.list-group-item')
 console.log(array);
+
+// DOM EVENTS - addEventListner
+//html_element.addEventListener('event_name',method call)
+function event_click()
+{
+    console.log('button clicked')
+}
+const button=document.querySelector('#button')
+button.addEventListener('click',event_click)
+button.addEventListener('dbclick',()=>{console.log('button Double clicked')})
+// Input_text event
+const text=document.querySelector('#text-input') 
+text.addEventListener('focus',()=>{
+    console.log('focus on')
+})
+text.addEventListener('blur', () => {
+    console.log(`BLURRED ON ME`);
+})
+//cut event 
+text.addEventListener('cut',()=>{
+    console.log(`cut on me`);
+})
+//copy event
+text.addEventListener('copy',()=>{
+  console.log('copy event');
+})
+//paste event
+text.addEventListener('paste',()=>{
+    console.log('paste event');
+  })
+ 
