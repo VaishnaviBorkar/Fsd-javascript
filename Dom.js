@@ -75,4 +75,33 @@ text.addEventListener('copy',()=>{
 text.addEventListener('paste',()=>{
     console.log('paste event');
   })
- 
+ const box=document.getElementById('box')
+console.log(box);
+box.addEventListener('mouseenter', (e) => {
+    box.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 100)`
+})
+box.addEventListener('mouseleave', (e) => {
+    box.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 150)`
+})
+//Dom traverse :methods to access the html elements based on relationship.
+// parent, children, siblings
+// 1. PARENT NODES
+// const list = document.getElementById('items')
+// list.parentElement.style.backgroundColor = 'yellow'
+
+//dom channing
+//parent of parent
+const list = document.getElementById('items')
+list.parentElement.parentElement.style.backgroundColor = 'yellow'
+//child node
+
+const ul=document.getElementById('items')
+console.log(ul.firstChild);    // text -> Indentation
+console.log(ul.firstElementChild);
+console.log(ul.lastChild);     // text -> Indentation
+console.log(ul.lastElementChild);
+//siblings
+console.log(ul.previousSibling);   // text -> Indentation
+console.log(ul.previousElementSibling);  
+console.log(ul.nextSibling);
+console.log(ul.nextElementSibling);
